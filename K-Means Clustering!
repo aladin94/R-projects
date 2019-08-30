@@ -7,7 +7,6 @@ X <- dataset[4:5]
 
 #Finding the optimal number of clusters using the elbow method of Statistics!
 
-set.seed((6))
 wcss <- vector()
 for (i in 1:10) wcss[i] <- sum(kmeans(X,i)$withinss)
 plot(1:10, wcss, type = "b", main = paste("Cluster of Clients"), xlab = "Number of Clusters", ylab= "WCSS")
