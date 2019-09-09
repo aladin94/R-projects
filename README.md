@@ -1,2 +1,4 @@
 # R-projects
-Example of K-means Clustering in R!
+Various data science/Machine Learning projects written in the language of R.
+
+Mostly done using Rstudio (if the syntax seems perculiar).
