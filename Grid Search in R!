@@ -1,0 +1,9 @@
+In this document, I will include the code for applying GridSearch in R, in order to identify the best "Hyper-Paramaters" to use for any given ML algorithm:
+
+#Install and import the caret library:
+library(caret)
+classifier = train(form= Purchased ~ ., data = training_set, method = 'svmRadial')
+classifier$bestTune
+
+#In the code above, we apply our classifier/estimator with paramaters that would return 
+which values for 'C, Accuracy, & Kappa' to use. If you run the last line, classifier$bestTune, it will easily return the best options to use in each situation.
