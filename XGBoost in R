@@ -1,0 +1,5 @@
+#install.packages('xgboost')
+library(xgboost)
+classifier = xgboost(data = as.matrix(training_set[-11]), label = training_set$Exited, nrounds = 10)
+
+##Data var. takes a matrix of training set, label takes the dependent variable (Exited) as a vector and nrounds is essentially the number of Folds.
